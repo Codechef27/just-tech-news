@@ -4,16 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
     <title>Just Tech News</title>
-    <link rel="stylsheet" href="/public/stylesheets/style.css">
+    
 </head>
 
 <body>
+    
     <div class="wrapper">
         <header>
             <h1>
                 <a href="/">Just Tech News</a>
             </h1>
+            <nav>
+                <a href="/login">login</a>
+                <button id="logout" class="btn-no-style">logout</button>
+            </nav>
         </header>
         <main>
             {{{ body }}}
@@ -22,7 +28,7 @@
             Thanks for visiting!
         </footer>
     </div>
-    
+    <script src="/javascript/logout.js"></script>
 </body>
 
 </html>
