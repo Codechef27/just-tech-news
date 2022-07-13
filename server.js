@@ -5,12 +5,15 @@ const path = require('path');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
+const helpers = require('./utils/helpers');
 
 const exphbars = require('express-handlebars');
-const hbars = exphbars.create({});
+const hbars = exphbars.create({ helpers });
 
 const session = require('express-session');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
+
+
 
 const sess = {
   secret: 'Super secret secret',
